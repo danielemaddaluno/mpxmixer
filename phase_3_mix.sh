@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script combines random audio tracks from the audio directory with video files from the video_tmp_2 directory.
+# It generates new video files by adding audio starting from a specified time within the audio track.
+# The resulting videos are saved in an output directory with a timestamped folder name.
+
 VIDEOS_IN=(video_tmp_2/*.mp4)
 AUDIOS_IN=(audio/*\ \(*\).mp3)  # Match files with pattern "(SS.mmm)" or "(SS)"
 VIDEOS_OUT="./output/output_$(date +'%Y_%m_%d_%H_%M_%S')"

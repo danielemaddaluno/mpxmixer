@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script processes video files located in the video_tmp_1 directory, strips their audio tracks,
+# and saves the resulting videos in the video_tmp_2 directory.
+# The script creates silent video files with the same content as the input but without audio.
+
 VIDEOS_IN="./video_tmp_1/*.mp4"
 VIDEOS_OUT="./video_tmp_2"
 

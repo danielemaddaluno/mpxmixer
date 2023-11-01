@@ -7,4 +7,3 @@ services:
     working_dir: /app
     entrypoint: /bin/sh -c
     command: /app/mpx_mixer.sh
-    

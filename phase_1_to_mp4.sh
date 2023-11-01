@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This Bash script is designed to convert non-MP4 video files to the MP4 format using FFmpeg,
-# a powerful multimedia processing tool. The script processes files located in the "videos" directory,
+# This script is designed to convert non-MP4 video files to the MP4 format using FFmpeg,
+# a powerful multimedia processing tool. The script processes files located in the "video_tmp_1" directory,
 # creating a new directory named "videos_tmp" to store the converted MP4 files.
 
 # Create the "./video_tmp" directory if it doesn't exist
