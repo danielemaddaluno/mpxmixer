@@ -46,15 +46,19 @@ So the directory structure should be something like the following structure:
 
 ## Run
 ### On Docker
-Move with a command line terminal inside the directory containing the project unzipped (see `Setup` section above),
+Inside a Windows system you should be able to run it simply double clicking 
+on the `mpx_mixer.bat` file (if you already have installed `Docker Desktop`).
+
+Otherwise follow these steps:
+1. Move with a command line terminal inside the directory containing the project unzipped (see `Setup` section above),
 for example like that:
-```bash
-cd <path-to-unzipped-project-folder>
-```
-Then run the following command:
-```bash
-docker-compose up
-```
+    ```bash
+    cd <path-to-unzipped-project-folder>
+    ```
+2. Then run the following command:
+    ```bash
+    docker-compose up
+    ```
 
 The output will be inside of the `output` folder.
 
