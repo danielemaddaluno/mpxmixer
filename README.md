@@ -53,12 +53,12 @@ So the directory structure should be something like the following structure:
 │   └── video4.mp4
 ├── README.md
 ├── audio_cropper.sh
-├── mpxmixer.bat
-└── mpxmixer.sh
+├── mpx_mixer.bat
+└── mpx_mixer.sh
 ```
 
 ## Run
-
+./
 ### On Windows
 Click on the bat file or execute the following command:
 ```bash

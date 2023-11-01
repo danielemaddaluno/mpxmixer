@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# convert non mp4 videos to mp4
+sh ./videos_to_mp4.sh
+
 # Output folder naming convention
 output_parent_folder="output"
 output_folder="$output_parent_folder/output_$(date +'%Y_%m_%d_%H_%M_%S')"
