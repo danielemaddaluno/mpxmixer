@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mpx-mixer:
+    image: jrottenberg/ffmpeg:latest
+    volumes:
+      - .:/app
+    working_dir: /app
+    entrypoint: /bin/sh -c
+    command: /app/mpx_mixer.sh
+    

@@ -1,28 +1,16 @@
 # Mpx Mixer: mp3-mp4 mixer utilities
 
-## Prerequisite
-You have to install `ffmpeg` on your system and add it to the `PATH`.
+## Prerequisites:
 
-### On Windows
-1. Install `chocolatey` following this [guide](https://chocolatey.org/install).
-2. Install `ffmpeg` using the following command:
-     ```bash
-    choco install ffmpeg
-    ```
-
-### On MacOS
-1. Install `brew` following this [guide](https://brew.sh/).
-   Normally executing:
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-2. Install `ffmpeg` using the following command:
-     ```bash
-    brew install ffmpeg
-    ```
-
-
-
+1. To run with Docker simply install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your operating system.
+2. To run without Docker you'll need to install `ffmpeg` on your system and add it to the `PATH`:
+   - On `MacOS`:
+      1. Install `brew` following this [guide](https://brew.sh/).
+      2. Install `ffmpeg` using the following command: `brew install ffmpeg`.
+   - On `Windows` (<u>not tested</u>):
+     1. Install `chocolatey` following this [guide](https://chocolatey.org/install).
+     2. Install `ffmpeg` using the following command: `choco install ffmpeg`.
+   
 ## Setup
 Download the zip clicking this [link](https://github.com/ailpix/mpxmixer/archive/refs/heads/main.zip).
 <br>
@@ -51,23 +39,34 @@ So the directory structure should be something like the following structure:
 │   ├── video2.mp4
 │   ├── video3.mp4
 │   └── video4.mp4
-├── README.md
-├── audio_cropper.sh
-├── mpx_mixer.bat
-└── mpx_mixer.sh
+├── ... various sh scripts ...
+├── docker-compose.yml
+└── README.md
 ```
 
 ## Run
-./
-### On Windows
-Click on the bat file or execute the following command:
+### On Docker
+Move with a command line terminal inside the directory containing the project unzipped (see `Setup` section above),
+for example like that:
 ```bash
-mpx_mixer.bat
+cd <path-to-unzipped-project-folder>
 ```
+Then run the following command:
+```bash
+docker-compose up
+```
+
+The output will be inside of the `output` folder.
 
 
 ### On MacOS
 Execute the following command:
+```bash
+./mpx_mixer.sh
+```
+
+### On Windows (<u>not tested under powershell</u>)
+Click on the bat file or execute the following command:
 ```bash
 ./mpx_mixer.sh
 ```
